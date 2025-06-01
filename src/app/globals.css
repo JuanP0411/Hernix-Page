@@ -5,7 +5,10 @@
 
 @theme{
   --color-app-black: #131313;
-  --color-menu-item: #E5E5E5;   
+  --color-menu-item: #E5E5E5; 
+  --color-intro-menu: #838383;
+  --color-footer-menu: #434343;
+  --color-footer-line: #5B5B5B;
 
 }
 
