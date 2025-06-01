@@ -1,4 +1,4 @@
-import Image from 'next/image';
+
 import IntroSection from '../components/custom/IntroSection'
 import WorkGallery from "../components/custom/WorkGallery"
 import SpotifyPlayer from "../components/custom/SpotifyPlayer"
