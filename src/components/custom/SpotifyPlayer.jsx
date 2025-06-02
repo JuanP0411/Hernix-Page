@@ -14,7 +14,7 @@ export default function SpotifyPlaylist({}) {
       <div className="w-full mt-[5vh]">
         <iframe
           className="w-full h-[50vh] rounded-xl shadow-2xl"
-          src="https://open.spotify.com/embed/playlist/37i9dQZF1EVHGWrwldPRtj?utm_source=generator"
+        src="https://open.spotify.com/embed/playlist/4nSc9fFlo0wtHzIuRiaDjo?utm_source=generator"
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
           title="Spotify Playlist"
