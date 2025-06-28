@@ -3,12 +3,13 @@
 
 @custom-variant dark (&:is(.dark *));
 
-@theme{
+@theme {
   --color-app-black: #131313;
-  --color-menu-item: #E5E5E5; 
+  --color-menu-item: #E5E5E5;
   --color-intro-menu: #838383;
   --color-footer-menu: #434343;
   --color-footer-line: #5B5B5B;
+  --color-button-gold: #B28A37;
 
 }
 
@@ -128,6 +129,7 @@
 
 
   }
+
   body {
     @apply bg-background text-foreground;
 
