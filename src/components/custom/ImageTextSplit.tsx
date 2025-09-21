@@ -5,9 +5,6 @@ interface ImageTextSplitProps {
   imageAlt?: string;
   heading: string;
   paragraph: string;
-  buttonText: string;
-  imagePosition?: 'left' | 'right'; // default is 'left'
-  onButtonClick?: () => void;
 }
 
 const ImageTextSplit: React.FC<ImageTextSplitProps> = ({
@@ -15,52 +12,26 @@ const ImageTextSplit: React.FC<ImageTextSplitProps> = ({
   imageAlt = 'Image',
   heading,
   paragraph,
-  buttonText,
-  imagePosition = 'left',
-  onButtonClick,
 }) => {
-  const isImageLeft = imagePosition === 'left';
-
   return (
-    <div className="flex flex-col md:flex-row w-screen h-full">
+    <div className="flex flex-col w-full">
       {/* Image section */}
-      <div
-        className={`
-          md:w-1/2 w-full
-          ${isImageLeft ? 'order-1' : 'order-2'}
-        `}
-      >
+      <div className="w-full">
         <img
           src={imageUrl}
           alt={imageAlt}
-          className={`
-            w-full h-full object-cover
-            ${isImageLeft ? 'rounded-r-none' : 'rounded-l-none'}
-          `}
+          className="w-full h-auto object-cover"
         />
       </div>
 
       {/* Text section */}
-      <div
-        className={`
-          md:w-1/2 w-full
-          flex flex-col justify-center
-          px-6 md:px-[5vw] py-8
-          ${isImageLeft ? 'order-2' : 'order-1'}
-        `}
-      >
-        <h2 className="services-title text-white mb-4">
+      <div className="flex flex-col px-6 py-8 text-left">
+        <h2 className="services-title text-white mb-4 text-left">
           {heading}
         </h2>
-        <p className="services-description text-white mb-6 max-w-l">
-  {paragraph}
-</p>
-        <button
-          onClick={onButtonClick}
-          className="bg-button-gold text-white px-6 py-3 rounded hover:bg-button-gold-700 w-fit button-primary"
-        >
-          {buttonText}
-        </button>
+        <p className="services-description text-white text-left">
+          {paragraph}
+        </p>
       </div>
     </div>
   );

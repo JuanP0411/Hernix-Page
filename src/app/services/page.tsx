@@ -11,67 +11,58 @@ export default function Home() {
         <p className="paragraph-large">
           Every project is different and so is the sound it needs.
           <span className="font-bold">
-            Whether you're building a track from scratch or polishing your final
+            Whether you&apos;re building a track from scratch or polishing your final
             version
           </span>{" "}
           I offer custom solutions to make your music hit just right.
         </p>
+        <button
+          className="bg-button-gold text-white px-4 py-2 sm:px-6 sm:py-3 rounded hover:bg-button-gold-700 w-full sm:w-fit button-primary text-sm sm:text-base"
+        >
+    Let's Work Together
+        </button>
+        <button
+          className="bg-transparent border border-button-gold text-button-gold px-4 py-2 sm:px-6 sm:py-3 rounded w-full sm:w-fit button-primary text-sm sm:text-base mt-2 sm:mt-0 sm:ml-4"
+        >
+    Previous projects
+        </button>
       </div>
-      <div>
-        <div className="my-[10vh]">
+      <div className="my-[10vh]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mx-[10vw]">
           <ImageTextSplit
             imageUrl="/services/hernix-board.png"
             heading="Recording"
             paragraph="I offer professional recording services in studios or adapted environments, ensuring technical and artistic quality that preserves the naturalness and emotion of each take."
-            buttonText="Previous projects"
-            imagePosition="left"
           />
-        </div>
 
-        <div className="my-32">
           <ImageTextSplit
             imageUrl="/services/hernix-board2.png"
             heading="Mastering"
-            paragraph="Mastering is the final step before releasing a song. I provide a precise process that ensures clarity, balance, and compatibility, delivering a professional product true to the project’s essence."
-            buttonText="Previous projects"
-            imagePosition="right"
+            paragraph="Mastering is the final step before releasing a song. I provide a precise process that ensures clarity, balance, and compatibility, delivering a professional product true to the project's essence."
           />
-        </div>
 
-        <div className="my-32">
           <ImageTextSplit
             imageUrl="/services/hernix-board3.png"
             heading="Mixing"
-            paragraph="I transform recordings into clear, powerful sonic experiences, combining technical skill and musical sensitivity to highlight the artistic intent. Each mix is tailored to the artist’s style and exceeds expectations."
-            buttonText="Previous projects"
-            imagePosition="left"
+            paragraph="I transform recordings into clear, powerful sonic experiences, combining technical skill and musical sensitivity to highlight the artistic intent. Each mix is tailored to the artist's style and exceeds expectations."
           />
-        </div>
-        <div className="my-32">
+
           <ImageTextSplit
             imageUrl="/services/hernix-board4.png"
             heading="Production"
             paragraph="I support artists from concept to final version, including composition, arrangements, sound design, and creative direction to deliver authentic, professional productions."
-            buttonText="Previous projects"
-            imagePosition="right"
           />
-        </div>
-        <div className="my-32">
+
           <ImageTextSplit
             imageUrl="/services/hernix-board7.png"
             heading="Dolby Atmos mix"
             paragraph="I create Dolby Atmos mixes for an immersive 360° experience, ideal for spatial audio platforms and artists seeking innovative sound."
-            buttonText="Previous projects"
-            imagePosition="left"
           />
-        </div>
-        <div className="my-32">
+
           <ImageTextSplit
             imageUrl="/services/hernix-board8.png"
             heading="Live Sound"
-            paragraph="I design and operate sound for concerts and live events, ensuring a clear, powerful experience that stays true to the artist’s identity."
-            buttonText="Previous projects"
-            imagePosition="right"
+            paragraph="I design and operate sound for concerts and live events, ensuring a clear, powerful experience that stays true to the artist's identity."
           />
         </div>
       </div>

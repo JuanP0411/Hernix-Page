@@ -1,0 +1,17 @@
+refactor: simplify ImageTextSplit component and implement grid layout
+
+- Remove unnecessary props (buttonText, onButtonClick, imagePosition)
+- Simplify component to vertical layout with image, heading, and paragraph
+- Update services page to display components in responsive 2-column grid
+- Add consistent margins (mx-[10vw]) to match text section above
+- Align heading and paragraph text to the left
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is up to date with 'origin/main'.
+#
+# Changes to be committed:
+#	modified:   src/app/services/page.tsx
+#	modified:   src/components/custom/ImageTextSplit.tsx
+#
