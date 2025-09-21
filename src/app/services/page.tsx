@@ -19,7 +19,7 @@ export default function Home() {
         <button
           className="bg-button-gold text-white px-4 py-2 sm:px-6 sm:py-3 rounded hover:bg-button-gold-700 w-full sm:w-fit button-primary text-sm sm:text-base"
         >
-    Let's Work Together
+    Let&apos;s Work Together
         </button>
         <button
           className="bg-transparent border border-button-gold text-button-gold px-4 py-2 sm:px-6 sm:py-3 rounded w-full sm:w-fit button-primary text-sm sm:text-base mt-2 sm:mt-0 sm:ml-4"
