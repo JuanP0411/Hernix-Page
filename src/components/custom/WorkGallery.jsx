@@ -1,30 +1,25 @@
 "use client";
 
 import React from "react";
+import { getCarouselImages } from "../../lib/imageUtils";
 
-const images = [
-  "carousel-1.png",
-  "carousel-2.png",
-  "carousel-3.png",
-  "carousel-4.png",
-  "carousel-5.png"
-];
+const images = getCarouselImages();
 
 export default function WorkGallery() {
   return (
-    <div className="mt-[15vh]">
+    <div className="mt-[5vh]">
       {/* Title section with horizontal margin */}
       <div className="mx-[10vw] flex flex-col">
-      <h2 className="text-2xl md:text-4xl lg:text-7xl text-left text-white mt-12 mb-8 font-extralight leading-tight">
-  Working{" "}
-  <span className="font-bold">
-    with the best
-<span className="underline relative -top-10 ml-[2vw] font-extralight text-lg md:text-lg lg:text-xl">
-  view all
-</span>
+        <h2 className="main-heading font-extralight leading-tight">
+          Working{" "}
+          <span className="font-bold">
+            with the best
+            <span className="underline relative -top-10 ml-[2vw] font-extralight text-lg md:text-lg lg:text-xl">
+              view all
+            </span>
 
-  </span>
-</h2>
+          </span>
+        </h2>
       </div>
 
       {/* Scrolling container without horizontal margin */}
@@ -36,7 +31,7 @@ export default function WorkGallery() {
           {[...images, ...images].map((src, i) => (
             <img
               key={i}
-              src={src}
+              src={`/carosuel/${src}`}
               alt={`Carousel image ${i + 1}`}
               className="inline-block w-48 h-48 object-cover rounded-lg shadow-md"
               loading="lazy"

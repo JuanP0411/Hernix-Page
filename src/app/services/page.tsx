@@ -4,11 +4,11 @@ export default function Home() {
   return (
     <div className="">
       <div className="mx-[10vw]">
-      <h1 className="text-[5vh] md:text-[7vh] text-left text-white mt-12 mb-8">
+      <h1 className="main-heading">
           <span className=" font-light">What i bring</span>{" "}
           <span className="font-bold">to the mix</span>
         </h1>
-        <p className="text-lg md:text-lg lg:text-2xl text-white mb-10 font-light">
+        <p className="paragraph-large">
           Every project is different and so is the sound it needs.
           <span className="font-bold">
             Whether you're building a track from scratch or polishing your final

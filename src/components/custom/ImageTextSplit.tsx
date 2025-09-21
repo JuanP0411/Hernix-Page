@@ -49,15 +49,15 @@ const ImageTextSplit: React.FC<ImageTextSplitProps> = ({
           ${isImageLeft ? 'order-2' : 'order-1'}
         `}
       >
-        <h2 className="text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-bold mb-4 text-white">
+        <h2 className="services-title text-white mb-4">
           {heading}
         </h2>
-        <p className="text-base md:text-lg lg:text-xl xl:text-2xl text-white mb-6 max-w-l">
+        <p className="services-description text-white mb-6 max-w-l">
   {paragraph}
 </p>
         <button
           onClick={onButtonClick}
-          className="bg-button-gold text-white px-6 py-3 rounded hover:bg-button-gold-700 w-fit text-lg"
+          className="bg-button-gold text-white px-6 py-3 rounded hover:bg-button-gold-700 w-fit button-primary"
         >
           {buttonText}
         </button>

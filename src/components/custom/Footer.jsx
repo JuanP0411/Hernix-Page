@@ -17,7 +17,7 @@ export default function Footer() {
 
         {/* Center - Navigation Menu */}
         <div className="mb-4 md:mb-0">
-          <nav className="flex flex-wrap gap-4 md:gap-12 text-xs md:text-sm font-light text-footer-menu justify-center md:justify-start">
+          <nav className="flex flex-wrap gap-4 md:gap-12 small-text font-light text-footer-menu justify-center md:justify-start">
             <a href="#home" className="hover:underline">Home</a>
             <a href="#about" className="hover:underline">Services</a>
             <a href="#services" className="hover:underline">Portfolio</a>
@@ -59,9 +59,9 @@ export default function Footer() {
       <div className="w-full border-t border-footer-line my-4" />
 
       {/* Bottom - Copyright */}
-      <div className="text-center text-sm text-footer-menu mb-7">
-  © {new Date().getFullYear()} Hernix. All rights reserved.
-</div>
+      <div className="text-center small-text text-footer-menu mb-7">
+        © {new Date().getFullYear()} Hernix. All rights reserved.
+      </div>
     </footer>
   );
 }

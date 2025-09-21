@@ -11,6 +11,36 @@
   --color-footer-line: #5B5B5B;
   --color-button-gold: #B28A37;
 
+  /* Typography sizes */
+  --font-size-section-title: 2.5rem;
+  --font-size-section-title-md: 3.5rem;
+  --font-size-section-title-lg: 4.5rem;
+
+  --font-size-subtitle: 1.5rem;
+  --font-size-subtitle-md: 2rem;
+  --font-size-subtitle-lg: 2.5rem;
+
+  --font-size-paragraph: 0.875rem;
+  --font-size-paragraph-md: 1rem;
+  --font-size-paragraph-lg: 1.125rem;
+
+  --font-size-small: 0.75rem;
+  --font-size-small-md: 0.875rem;
+  --font-size-small-lg: 1rem;
+
+  /* Typography weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Line heights */
+  --line-height-tight: 1.1;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
 }
 
 @theme inline {
@@ -135,4 +165,70 @@
 
   }
 
+}
+
+@layer components {
+
+  /* Typography component classes using @apply */
+  .main-heading {
+    @apply text-2xl md:text-4xl lg:text-7xl text-left text-white mt-12 mb-8;
+  }
+
+  .section-title {
+    @apply text-xl md:text-3xl lg:text-5xl font-bold;
+  }
+
+  .section-title-centered {
+    @apply text-xl md:text-3xl lg:text-5xl font-bold text-center;
+  }
+
+  .subtitle {
+    @apply text-lg md:text-2xl lg:text-3xl font-semibold;
+  }
+
+  .subtitle-centered {
+    @apply text-lg md:text-2xl lg:text-3xl font-semibold text-center;
+  }
+
+  .paragraph {
+    @apply text-sm md:text-base lg:text-lg text-white mb-10 font-light;
+  }
+
+  .paragraph-large {
+    @apply text-base md:text-lg lg:text-xl text-white mb-8 font-light;
+  }
+
+  .menu-item {
+    @apply text-intro-menu text-2xl md:text-4xl lg:text-4xl cursor-pointer font-extralight;
+  }
+
+  .small-text {
+    @apply text-xs md:text-sm lg:text-base text-gray-400;
+  }
+
+  .button-primary {
+    @apply text-sm md:text-base lg:text-lg font-medium text-white;
+  }
+
+  .button-secondary {
+    @apply text-sm md:text-base lg:text-lg font-medium text-gray-600;
+  }
+
+  /* Portfolio specific styles */
+  .portfolio-title {
+    @apply text-3xl md:text-5xl lg:text-6xl font-bold text-center mb-8;
+  }
+
+  .portfolio-subtitle {
+    @apply text-lg md:text-xl lg:text-2xl text-gray-600 text-center mb-12;
+  }
+
+  /* Services specific styles */
+  .services-title {
+    @apply text-2xl md:text-4xl lg:text-5xl font-bold text-center mb-6;
+  }
+
+  .services-description {
+    @apply text-base md:text-lg lg:text-xl text-gray-700 text-center mb-8;
+  }
 }
