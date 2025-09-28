@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import {
   NavigationMenu,
   NavigationMenuList,
@@ -13,9 +14,11 @@ export default function Navbar() {
     <nav className="bg-app-black h-[20vh]">
       <div className=" mx-[10vw] mb-[10vh] h-full flex items-center justify-between">
         {/* Left: Logo/Image */}
-        <img
+        <Image
   src="/logo.png"
   alt="MyApp Logo"
+  width={64}
+  height={64}
   className="w-[clamp(2rem,4vw,4rem)] h-auto object-contain"
 />
         {/* Right: Navigation Menu */}

@@ -1,9 +1,11 @@
 
 
+import Image from 'next/image'
+
 export default function AboutMe() {
     return (
       <div className="">
-        <img src="/Contact.svg" alt="MyApp Logo" className='w-full block'/>
+        <Image src="/Contact.svg" alt="MyApp Logo" width={1200} height={400} className='w-full block'/>
         <div className="mx-[10vw]">
         <h1 className="text-xl md:text-3xl lg:text-6xl text-left text-white mt-12 mb-8 font-extralight">
         Bring your sound 
@@ -15,7 +17,7 @@ export default function AboutMe() {
             <div className="space-y-6">
               <h2 className="text-2xl font-bold mb-4">About Me</h2>
               <p className="paragraph-large">
-                Hi! My name is Juan Felipe Hernandez, <span className="font-bold">but everyone calls me Hernix</span>. I'm a Sound Engineer and Producer from Colombia who loves to work with artists to help them create their new hits!
+                Hi! My name is Juan Felipe Hernandez, <span className="font-bold">but everyone calls me Hernix</span>. I&apos;m a Sound Engineer and Producer from Colombia who loves to work with artists to help them create their new hits!
               </p>
               <p className="paragraph-large">
                 I started in music as a drummer but my passion for technology made me interested in Post Production for Music. I also love making the sound for live concerts and events.
@@ -24,7 +26,7 @@ export default function AboutMe() {
             
             {/* Right Column */}
             <div className="space-y-6 flex flex-col items-center justify-center">
-            <img src="/gold_logo.svg" alt="MyApp Logo" className='w-[50%]'/>
+            <Image src="/gold_logo.svg" alt="MyApp Logo" width={300} height={300} className='w-[50%]'/>
             </div>
           </div>
 

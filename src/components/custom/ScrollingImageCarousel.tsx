@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { getCarouselImages } from "../../lib/imageUtils";
 
 interface ScrollingImageCarouselProps {
@@ -61,10 +62,12 @@ export default function ScrollingImageCarousel({
           style={{ animationDuration }}
         >
           {[...carouselImages, ...carouselImages].map((src, i) => (
-            <img
+            <Image
               key={i}
               src={`/carosuel/${src}`}
               alt={`Carousel image ${i + 1}`}
+              width={256}
+              height={256}
               className={`inline-block ${getImageSizeClass()} object-cover rounded-lg shadow-md ${imageClassName}`}
               style={getImageStyle()}
               loading="lazy"

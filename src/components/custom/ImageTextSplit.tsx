@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface ImageTextSplitProps {
   imageUrl: string;
@@ -17,9 +18,11 @@ const ImageTextSplit: React.FC<ImageTextSplitProps> = ({
     <div className="flex flex-col w-full">
       {/* Image section */}
       <div className="w-full">
-        <img
+        <Image
           src={imageUrl}
           alt={imageAlt}
+          width={800}
+          height={400}
           className="w-full h-auto object-cover"
         />
       </div>

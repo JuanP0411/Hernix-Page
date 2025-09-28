@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 /** One image entry (add `href` if you want it to open a link) */
 export type GalleryImage = {
@@ -42,9 +43,11 @@ const InteractiveScrollingGallery: React.FC<ScrollingGalleryProps> = ({
         {[...images, ...images].map((img, i) => {
           const content = (
             <div className="w-[50vh] h-[50vh] overflow-hidden rounded-lg shadow-md">
-              <img
+              <Image
                 src={img.src}
                 alt={img.alt ?? `carousel image ${i + 1}`}
+                width={400}
+                height={400}
                 className="w-full h-full object-cover"
                 loading="lazy"
               />

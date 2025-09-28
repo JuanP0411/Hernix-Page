@@ -1,9 +1,11 @@
 
 
+import Image from 'next/image'
+
 export default function AboutMe() {
   return (
     <div className="">
-      <img src="/about.svg" alt="MyApp Logo" className='w-full block'/>
+      <Image src="/about.svg" alt="MyApp Logo" width={1200} height={400} className='w-full block'/>
       <div className="mx-[10vw]">
       <h1 className="main-heading">
           <span className="font-bold">About Me</span>
@@ -26,14 +28,14 @@ export default function AboutMe() {
 
  
       </div>
-      <div className="mx-[10vw]"><img src="/about_group.svg" alt="MyApp Logo" className='w-full block'/></div>
+      <div className="mx-[10vw]"><Image src="/about_group.svg" alt="MyApp Logo" width={1200} height={400} className='w-full block'/></div>
 
       <div className="mx-[10vw] mb-40">
       <h1 className="main-heading">
           <span className="font-bold">Mission</span>
         </h1>
         <p className="paragraph-large">
-        As a sound engineer, my mission is to craft sonic experiences that transcend the ordinary. Whether it's breathing  <span className="font-bold">life into live events, capturing the soul of musical creativity in my studio recordings,</span> meticulously balancing elements in the mixing process, or adding the final touch of perfection through mastering,  <span className="font-bold">I am dedicated to elevating sound to an art form.</span> My commitment to continuous innovation, collaborative partnerships with artists, and sustainable practices ensures that I not only meet but exceed my clients' expectations, turning sound into an unforgettable masterpiece.
+        As a sound engineer, my mission is to craft sonic experiences that transcend the ordinary. Whether it&apos;s breathing  <span className="font-bold">life into live events, capturing the soul of musical creativity in my studio recordings,</span> meticulously balancing elements in the mixing process, or adding the final touch of perfection through mastering,  <span className="font-bold">I am dedicated to elevating sound to an art form.</span> My commitment to continuous innovation, collaborative partnerships with artists, and sustainable practices ensures that I not only meet but exceed my clients&apos; expectations, turning sound into an unforgettable masterpiece.
           <span className="font-bold">
 
           </span>{" "}
