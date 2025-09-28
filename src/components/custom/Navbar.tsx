@@ -43,7 +43,7 @@ export default function Navbar() {
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
-              <NavigationMenuLink className={navItemClasses} href="/">
+              <NavigationMenuLink className={navItemClasses} href="/contact">
                   Contact
                 </NavigationMenuLink>
               </NavigationMenuItem>
