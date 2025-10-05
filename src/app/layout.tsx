@@ -14,8 +14,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className=" bg-app-black min-h-screen flex flex-col">
         <Navbar />
 
-        {/* Main content expands to fill space, but no padding around footer */}
-        <main className="flex-grow flex flex-col items-center justify-center px-4">
+        {/* Main content expands full-width; pages manage their own spacing */}
+        <main className="flex-grow flex flex-col items-stretch">
           {children}
         </main>
 
